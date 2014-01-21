@@ -4,6 +4,9 @@ ifneq ($(TARGET_USES_GRALLOC1), true)
 else
     display-hals += libgralloc1
 endif
+ifneq ($(TARGET_PROVIDES_LIBLIGHT),true)
+    display-hals += liblight
+endif
 
 display-hals += hdmi_cec
 sdm-libs := sdm/libs
