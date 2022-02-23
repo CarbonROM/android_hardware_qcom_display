@@ -1,3 +1,10 @@
+soong_namespace {
+    imports: [
+        "vendor/qcom/opensource/display",
+        "hardware/qcom-caf/sm8350/display",
+    ]
+}
+
 //libgrallocutils
 cc_library_shared {
     name: "libgrallocutils",

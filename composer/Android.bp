@@ -1,3 +1,12 @@
+soong_namespace {
+    imports: [
+        "vendor/qcom/opensource/display",
+        "hardware/qcom-caf/sm8350/display",
+        "hardware/qcom-caf/sm8350/display/gralloc",
+        "hardware/qcom-caf/sm8350/display/gpu_tonemapper",
+    ]
+}
+
 composer_srcs = ["*.cpp"]
 
 cc_binary {

@@ -1,3 +1,11 @@
+soong_namespace {
+    imports: [
+        "vendor/qcom/opensource/display",
+        "hardware/qcom-caf/sm8350/display",
+        "hardware/qcom-caf/sm8350/display/gralloc",
+    ]
+}
+
 cc_library_shared {
     name: "libgpu_tonemapper",
     sanitize: {
